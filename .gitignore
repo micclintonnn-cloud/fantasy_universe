@@ -1,34 +1,99 @@
-# dependencies
+# ========================================================
+# NEXT.JS & NODE.JS
+# ========================================================
+# Dependencies
 /node_modules
 /.pnp
 .pnp.js
 
-# testing
-/coverage
-
-# next.js
+# Build & Static Exports
 /.next/
 /out/
-
-# production
 /build
+/dist
+.turbo
 
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# local env files
-.env*.local
-
-# vercel
-.vercel
-
-# typescript
+# Next.js Cache & Types
+.next/cache
 *.tsbuildinfo
 next-env.d.ts
 
+# Testing & Coverage
+/coverage
+*.lcov
+
+# Debug & Execution Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ========================================================
+# ENVIRONMENT VARIABLES & SECRETS
+# ========================================================
+# Local environment configs (keep secret/local)
+.env
+.env*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Always track example template
+!.env.example
+
+# Security Credentials & Keys
+*.pem
+*.key
+*.cert
+*.crt
+
+# Vercel CLI
+.vercel
+
+# ========================================================
+# LOCAL BRIEFS & DOWNLOADS
+# ========================================================
+/downloads/
+*.docx
+*.pdf
+*.xlsx
+
+# ========================================================
+# OPERATING SYSTEM SPECIFIC
+# ========================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ========================================================
+# IDES & EDITORS
+# ========================================================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
