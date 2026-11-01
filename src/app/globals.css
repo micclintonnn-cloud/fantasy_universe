@@ -1,0 +1,239 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+:root {
+  --color-abyss-black: #071a2e;
+  --color-deep-ocean: #0a2948;
+  --color-midnight-navy: #0d365e;
+  --color-ocean-blue: #134a78;
+  --color-sky-blue: #38bdf8;
+  --color-bioluminescent-cyan: #32E6E0;
+  --color-mystic-teal: #13B8A6;
+  --color-celestial-blue: #38bdf8;
+  --color-pearl-white: #F0F9FF;
+  --color-mist-silver: #BAE6FD;
+
+  --font-bricolage: 'Bricolage Grotesque', sans-serif;
+  --font-cinzel: 'Bricolage Grotesque', sans-serif;
+  --font-cormorant: 'Bricolage Grotesque', sans-serif;
+  --font-inter: 'Bricolage Grotesque', sans-serif;
+
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+html,
+body {
+  background-color: #071a2e;
+  color: #F0F9FF;
+  font-family: 'Bricolage Grotesque', sans-serif !important;
+  overflow-x: hidden;
+  background-image:
+    radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.28) 0%, transparent 60%),
+    radial-gradient(circle at 85% 25%, rgba(14, 165, 233, 0.20) 0%, transparent 45%),
+    radial-gradient(circle at 15% 65%, rgba(50, 230, 224, 0.16) 0%, transparent 50%),
+    radial-gradient(circle at 50% 100%, rgba(56, 189, 248, 0.22) 0%, transparent 60%),
+    linear-gradient(180deg, #071a2e 0%, #0a2948 25%, #0c3358 50%, #092642 75%, #071a2e 100%);
+  background-attachment: fixed;
+}
+
+/* Typography Utility Classes */
+.font-cinzel,
+.font-editorial,
+.font-sans,
+.font-serif,
+.font-bricolage {
+  font-family: 'Bricolage Grotesque', sans-serif !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #071a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0d365e;
+  border-radius: 3px;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
+
+/* Cinematic Primary Button */
+.btn-cinematic-primary {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  background: linear-gradient(135deg, #32E6E0 0%, #13B8A6 100%);
+  color: #050B12;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.875rem 1.75rem;
+  border-radius: 4px;
+  border: 1px solid #6df2ed;
+  box-shadow: 0 0 25px rgba(50, 230, 224, 0.35);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+  max-width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .btn-cinematic-primary {
+    padding: 0.75rem 1.25rem;
+    letter-spacing: 0.1em;
+    font-size: 0.75rem;
+  }
+}
+
+.btn-cinematic-primary:hover {
+  background: linear-gradient(135deg, #6df2ed 0%, #32E6E0 100%);
+  box-shadow: 0 0 35px rgba(50, 230, 224, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Cinematic Ghost / Secondary Button */
+.btn-cinematic-secondary {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  background: rgba(8, 19, 33, 0.6);
+  color: #EAF7F5;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.875rem 1.75rem;
+  border-radius: 4px;
+  border: 1px solid rgba(50, 230, 224, 0.35);
+  backdrop-filter: blur(12px);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  max-width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .btn-cinematic-secondary {
+    padding: 0.75rem 1.25rem;
+    letter-spacing: 0.1em;
+    font-size: 0.75rem;
+  }
+}
+
+.btn-cinematic-secondary:hover {
+  background: rgba(50, 230, 224, 0.12);
+  border-color: #32E6E0;
+  color: #32E6E0;
+  box-shadow: 0 0 25px rgba(50, 230, 224, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Cinematic Vignette Overlays (Matching Atmospheric Sky Blue) */
+.overlay-vignette {
+  background: radial-gradient(ellipse at center, transparent 35%, rgba(7, 26, 46, 0.75) 85%, #071a2e 100%);
+}
+
+.overlay-hero-bottom {
+  background: linear-gradient(180deg, transparent 40%, rgba(7, 26, 46, 0.7) 75%, #071a2e 100%);
+}
+
+.overlay-hero-top {
+  background: linear-gradient(180deg, rgba(7, 26, 46, 0.85) 0%, rgba(7, 26, 46, 0.4) 60%, transparent 100%);
+}
+
+/* Card & Surface Utilities */
+.sorvia-card,
+.parchment-card {
+  background: rgba(10, 41, 72, 0.8);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  backdrop-filter: blur(12px);
+  max-width: 100%;
+}
+
+.btn-cyan {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  background: #38bdf8;
+  color: #071a2e;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  padding: 0.75rem 1.5rem;
+  max-width: 100%;
+}
+
+.btn-cyan:hover {
+  background: #7dd3fc;
+}
+
+.btn-brass {
+  background: #38bdf8;
+  color: #071a2e;
+  font-weight: 700;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+}
+
+.btn-brass-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: #BAE6FD;
+  background: rgba(7, 26, 46, 0.8);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  max-width: 100%;
+}
+
+.btn-brass-outline:hover {
+  border-color: #38bdf8;
+  color: #ffffff;
+}
+
+/* Responsive Image and Container Safeguards */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent text overflow across all screens */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+span,
+a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}

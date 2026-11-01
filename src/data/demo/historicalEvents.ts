@@ -1,0 +1,47 @@
+import { HistoricalEvent } from '@/types/world';
+
+export const DEMO_HISTORICAL_EVENTS: HistoricalEvent[] = [
+  {
+    id: 'evt_first_deluge',
+    name: 'The Great Tidal Cataclysm',
+    slug: 'the-great-tidal-cataclysm',
+    subtitle: 'The Inversion of the Ancient Continents',
+    shortDescription: 'A primordial oceanic upheaval that submerged the continental kingdoms and created the fractured archipelagos of modern Sorvia.',
+    fullLore: 'Ancient stone tablets preserved at Port Veridia record that the seas rose seventy fathoms in a single lunar cycle. Mountain peaks became island spires, and the ancient civilization of the Tidal Architects disappeared beneath the waves.',
+    era: 'The Pre-Deluge Era',
+    cycle: 'Circa 2,400 Cycles Before Present',
+    consequences: 'Birth of island-based seafaring civilizations and fragmentation of planetary geography.',
+    involvedFactions: ['The Pre-Deluge Architects', 'Early Seafaring Clans'],
+    canonStatus: 'Proposed',
+    tags: ['Cataclysm', 'Founding Lore', 'Origins'],
+  },
+  {
+    id: 'evt_meridian_charter',
+    name: 'The Signing of the Meridian Sea Gates Charter',
+    slug: 'meridian-sea-gates-charter',
+    subtitle: 'The Partition of the Main Trade Lanes',
+    shortDescription: 'A historic treaty signed between the Sovereign Admiralty and the Merchant Guilds to regulate passage through fortified straits.',
+    fullLore: 'Following decades of destructive privateering wars, the Great Meridian Charter established universal star-reading protocols, standardized trade dues, and declared the Siren Trench a forbidden quarantine sector.',
+    era: 'The Imperial Maritime Epoch',
+    cycle: 'Cycle 312 of the Unified Reckoning',
+    consequences: 'Created the current geopolitical tension between imperial naval enforcers and independent voyagers.',
+    involvedFactions: ['The Sovereign Realm of Thalassor', 'The League of Free Sea Ports'],
+    canonStatus: 'Proposed',
+    tags: ['Treaty', 'Naval Politics', 'Law of the Sea'],
+  },
+  {
+    id: 'evt_first_singing_transit',
+    name: 'The Vanishing of the Twelfth Exploratory Fleet',
+    slug: 'vanishing-twelfth-fleet',
+    subtitle: 'The Initial Discovery of the Singing Meridian',
+    shortDescription: 'Twelve state-of-the-art imperial discovery galleons crossed into the Western Expanse and ceased all signal communications.',
+    fullLore: 'Only a solitary drift-cutter returned six weeks later, undamaged with sails drawn, carrying a ship\'s log that ended with the words: "The water does not fall; it opens upward toward the stars."',
+    era: 'Recent Maritime Era',
+    cycle: 'Cycle 488 (Two Decades Before Present)',
+    consequences: 'Instigated the current race of secret expeditions and the central quest of Book One.',
+    involvedFactions: ['The Sovereign Admiralty', 'Independent Navigators'],
+    canonStatus: 'Proposed',
+    tags: ['Mystery', 'Expedition', 'Trilogy Catalyst'],
+  },
+];
+
